@@ -1,31 +1,91 @@
 <!DOCTYPE html>
 <html>
 
-<!--900-include=/includes/head.html-->
+<head>
+    <title>Design Like Mad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,700|Roboto+Slab:700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/font-awesome-4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/lightbox.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/ico" href="/images/favicon.ico" />
+</head>
+
 <body>
-    <!--900-include=/includes/internal_nav.html-->
-    <div class="sponsor-wrapper schedule-wrapper" >
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html"><img src="/images/small_logo.png" />Design Like Mad</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/index.html#about">About</a>
+                    </li>
+                    <li><a href="/index.html#how">How it Works</a>
+                    </li>
+                    <li>
+                        <a href="/projects">2013 Projects</a>
+                    </li>
+                    <li><a href="/schedule">Schedule</a>
+                    </li>
+                    <!-- <li><a href="/blog">Updates</a>
+                    </li> -->
+                    <li><a href="/sponsors">Sponsors</a>
+                    </li>
+                    <li><a href="/index.html#join" id="join-button">JOIN</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="sponsor-wrapper schedule-wrapper">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <h2>Design Like Mad 2014 Schedule</h2>
                 <p>
-                    Design Like Mad is <strong>Saturday, September 27th</strong> from <strong>9am-9pm</strong> at the <strong>Madison Public Library: Central Library</strong>. The following are more details about the event.<br /><br />
-                    Design Like Mad Schedule of Events<br /><br />
-                    8:30am - 9:00am: Check-In and Breakfast (supplied by Willy Street Co-Op)<br /><br />
-                    9:00am: Kickoff<br /><br />
-                    11:40am - 12:00pm: Non-Profits: First Feedback Session<br /><br />
-                    12:00pm - Lunch Served (supplied by Milios)<br /><br />
-                    3:00pm - 3:20pm: Non-Profits: Second Feedback Session<br /><br />
-                    6:00pm: Dinner Served (supplied by Ian's Pizza)<br /><br />
-                    7:00pm - 8:00pm: Finalize Products, Print Materials, and Powerpoints Due<br /><br />
-                    7:30pm - 9:00pm: Drinks (supplied by Forequarter)<br /><br />
-                    8:00pm - 9:00pm: Final Presentations<br /><br />
-                    <strong>Check-in</strong><br /><br />
-                    Check-in will be 8:30-9:00am at the Madison Public Library (201 W Mifflin St
-                    Madison, WI 53703) in the Third Floor Conference Room. Volunteers will be around to guide you to the appropriate location.<br /><br />
-
-                    <strong>Supplies</strong><br /><br />
-                    Here's a list of supplies you may want to bring:
+                    Design Like Mad is <strong>Saturday, September 27th</strong> from <strong>9am-9pm</strong> at the <strong>Madison Public Library: Central Library</strong>. The following are more details about the event.
+                    <br />
+                    <br /> Design Like Mad Schedule of Events
+                    <br />
+                    <br /> 8:30am - 9:00am: Check-In and Breakfast (supplied by Willy Street Co-Op)
+                    <br />
+                    <br /> 9:00am: Kickoff
+                    <br />
+                    <br /> 11:40am - 12:00pm: Non-Profits: First Feedback Session
+                    <br />
+                    <br /> 12:00pm - Lunch Served (supplied by Milios)
+                    <br />
+                    <br /> 3:00pm - 3:20pm: Non-Profits: Second Feedback Session
+                    <br />
+                    <br /> 6:00pm: Dinner Served (supplied by Ian's Pizza)
+                    <br />
+                    <br /> 7:00pm - 8:00pm: Finalize Products, Print Materials, and Powerpoints Due
+                    <br />
+                    <br /> 7:30pm - 9:00pm: Drinks (supplied by Forequarter)
+                    <br />
+                    <br /> 8:00pm - 9:00pm: Final Presentations
+                    <br />
+                    <br />
+                    <strong>Check-in</strong>
+                    <br />
+                    <br /> Check-in will be 8:30-9:00am at the Madison Public Library (201 W Mifflin St Madison, WI 53703) in the Third Floor Conference Room. Volunteers will be around to guide you to the appropriate location.
+                    <br />
+                    <br />
+                    <strong>Supplies</strong>
+                    <br />
+                    <br /> Here's a list of supplies you may want to bring:
                     <ul>
                         <li>Computer with all necessary software (if you need a laptop and have not been contacted by Abby, please email her at abby@designlikemad.org to reserve a library laptop)</li>
                         <li>Computer Charger</li>
@@ -33,27 +93,115 @@
                         <li>Pencils/pens/any other writing materials/paper you may need for sketching</li>
                         <li>A computer mouse</li>
                     </ul>
-                    <strong>Supplies</strong><br /><br />
-                    Here's a list of supplies you will have access to:
+                    <strong>Supplies</strong>
+                    <br />
+                    <br /> Here's a list of supplies you will have access to:
                     <ul>
                         <li>Library Printers</li>
                         <li>Library Computers</li>
                         <li>Exacto Knives and cutting mats</li>
                     </ul>
-                    <strong>Public and Non-Profit Visitors</strong><br /><br />
-                    The event is free and open to the public on the day of the event during the library’s typical hours of <strong>9am-5pm</strong>. Non-profit organizations are welcome to come in and give feedback to the designers during the design process. We have designated slots from <strong>11:40am - 12:00pm</strong> and <strong>3pm - 3:20pm</strong> for representatives from the non-profit organizations to stop by and check-in on the design process, answer questions, and give feedback to the designers.  <strong>Non profits are also required to be at the final presentations beginning at 8pm.</strong><br /><br />
-                    <strong>Final Products</strong><br /><br />
-                    Final products are to be transferred to the non-profit organization at the conclusion of the event at <strong>9:00pm</strong>. Teams are responsible for communicating with their non-profit organization about how the final products will be transferred and if additional training is necessary for the non-profits to navigate their new products.<br /><br />
-                    <strong>Release Agreements</strong><br /><br />
-                    Upon arrival, you will receive a Work Release Agreement and Talent Release Agreement to sign. Volunteers will be there to answer any questions you may have.<br /><br />
-                    <strong>Final Presentations</strong><br /><br />
-                    After a long day of hard work relax and have some drinks supplied by 4-Quartar. Non profit coordinators and members will join us to celebrate the accomplishments of all the designers.<br /><br />
-                    <strong>Questions</strong><br /><br />
-                    If you have any additional questions regarding the event please contact Abby (abby@designlikemad.org)<br /><br />
-                </pclass>
+                    <strong>Public and Non-Profit Visitors</strong>
+                    <br />
+                    <br /> The event is free and open to the public on the day of the event during the library’s typical hours of <strong>9am-5pm</strong>. Non-profit organizations are welcome to come in and give feedback to the designers during the design process. We have designated slots from <strong>11:40am - 12:00pm</strong> and <strong>3pm - 3:20pm</strong> for representatives from the non-profit organizations to stop by and check-in on the design process, answer questions, and give feedback to the designers. <strong>Non profits are also required to be at the final presentations beginning at 8pm.</strong>
+                    <br />
+                    <br />
+                    <strong>Final Products</strong>
+                    <br />
+                    <br /> Final products are to be transferred to the non-profit organization at the conclusion of the event at <strong>9:00pm</strong>. Teams are responsible for communicating with their non-profit organization about how the final products will be transferred and if additional training is necessary for the non-profits to navigate their new products.
+                    <br />
+                    <br />
+                    <strong>Release Agreements</strong>
+                    <br />
+                    <br /> Upon arrival, you will receive a Work Release Agreement and Talent Release Agreement to sign. Volunteers will be there to answer any questions you may have.
+                    <br />
+                    <br />
+                    <strong>Final Presentations</strong>
+                    <br />
+                    <br /> After a long day of hard work relax and have some drinks supplied by 4-Quartar. Non profit coordinators and members will join us to celebrate the accomplishments of all the designers.
+                    <br />
+                    <br />
+                    <strong>Questions</strong>
+                    <br />
+                    <br /> If you have any additional questions regarding the event please contact Abby (abby@designlikemad.org)
+                    <br />
+                    <br />
+                    </pclass>
             </div>
         </div>
     </div>
-    <!--900-include=/includes/footer.html-->
+    <!-- <div class="row email-wrapper">
+        <div class="col-sm-4 col-sm-offset-4">
+            <h3>Sign up to receive updates about Design Like Mad!</h3>
+            <form action="/form/emails" data-redirect="/sponsors/success.html" data-email="abby@designlikemad.org">
+                <input type="email" name="email" value="EMAIL" onclick="this.select();">
+                <br />
+                <button type="submit" class="join-button footer-join">SIGN UP</button>
+            </form>
+        </div>
+    </div> -->
+    <!-- <div class="footer">
+        <div class="row">
+            <div class="col-sm-2">
+                <a href="http://www.designlikemad.org">DESIGN LIKE MAD, USA</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="http://www.designlikemad.org/contact">CONTACT</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="http://www.designlikemad.org/projects">2013 PROJECTS</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="http://www.designlikemad.org#host">HOST AN EVENT</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="http://www.designlikemad.org/press">PRESS</a>
+            </div>
+            <div class="col-sm-2">
+                <a href="http://www.designlikemad.org">CITIES</a>
+            </div>
+        </div>
+    </div> -->
+    <div class="bottom-footer">
+        <div class="row">
+            &copy; Design Like Mad, 2013
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/lightbox.js"></script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-52627734-1', 'auto');
+    ga('send', 'pageview');
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+                return item.el.attr('title');
+            }
+        }
+    });
+    </script>
 </body>
+
 </html>
