@@ -1,8 +1,52 @@
 ﻿<!DOCTYPE html>
 <html>
-<!--900-include=/includes/head.html-->
+<head>
+    <title>Design Like Mad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,700|Roboto+Slab:700,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/font-awesome-4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/lightbox.css">
+    <link rel="icon" type="image/ico" href="/images/favicon.ico" />
+</head>
+
 <body>
-    <!--900-include=/includes/internal_nav.html-->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/index.html"><img src="/images/small_logo.png" />Design Like Mad</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/index.html#about">About</a>
+                    </li>
+                    <li><a href="/index.html#how">How it Works</a>
+                    </li>
+                    <li>
+                        <a href="/projects">2013 Projects</a>
+                    </li>
+                    <li><a href="/schedule">Schedule</a>
+                    </li>
+                    <!-- <li><a href="/blog">Updates</a>
+                    </li> -->
+                    <li><a href="/sponsors">Sponsors</a>
+                    </li>
+                    <li><a href="/index.html#join" id="join-button">JOIN</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
     <div class="mainwrapper">
         <div class="row">
             <!-- Image Caption 2 -->
@@ -21,7 +65,7 @@
     <div class="row application-wrapper">
         <div class="col-sm-10 col-sm-offset-1">
             <h2>Developer Application</h2>
-            <p><strong>Applications are closed for Design Like Mad 2014. If you are interested in Design Like Mad 2015, please sign up below for future email updates.</strong></p>
+            <p><strong>Design Like Mad will begin accepting applications March 1st. Please check back later.</strong></p>
             <!--<p><strong>Applications are due August 29th, midnight. <!-- Due to a large volume of applications this year, late submissions will not be accepted.</strong></p>
             <p>Design Like Mad gives deserving, local non-profit organizations access to pro-bono design help from professional designers and design students.  Last year 60 Design Like Mad designers and developers completed projects for 21 non-profits in 12 hours.  Teams included graphic designers, web designers and developers, architects, and interior designers (<a href="/projects">view last year's projects</a>).</p>
             <p><strong>Designers and developers are required to attend a pre-planning meeting on the evening of Wednesday, September 27th (Time TBD), and the event on Saturday, September 27th from 9am - 9pm.</strong></p>
@@ -54,6 +98,53 @@
 
         </div>
     </div>
-    <!--900-include=/includes/footer.html-->
-</body>
+    <div class="bottom-footer">
+        <div class="row">
+            &copy; Design Like Mad, 2013
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/lightbox.js"></script>
+    <script src="/js/jquery.countdown.min.js"></script>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-52627734-1', 'auto');
+    ga('send', 'pageview');
+    $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+                return item.el.attr('title');
+            }
+        }
+    });
+    </script>
+    <script type="text/javascript">
+    $("#getting-started")
+    .countdown("2016/04/23", function(event) {
+    $(this).html(
+        '<div class="counter">' + event.strftime('%w') + '<br /> Weeks' + '</div>' + '<div class="counter">' + event.strftime(' %-d') + '<br /> Days' + '</div>' + '<div class="counter">' + event.strftime('%-H') + '<br /> Hours' +  '</div>' + '<div class="counter">' + event.strftime('%M') + '<br /> Minutes' + '</div>'  + '<div class="counter">' + event.strftime('%S') + '<br /> Seconds' + '</div>'
+        );
+    });
+     </script></body>
 </html>
