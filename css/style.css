@@ -11,7 +11,6 @@ footer {
     margin: 50px 0;
 }
 
-
 .row {
     width: 100%;
     margin: 0;
@@ -1134,6 +1133,13 @@ margin: 0 auto;
     border: 2px solid #5bd0ef;
     margin-bottom: 20px;
  }
+
+
+h4.dates {
+    color: #fff;
+    text-transform: none;
+}
+
 
  @media (min-width: 768px){
     .counter {
